@@ -9,13 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
   
-  @ObservedObject var qrScanner = QRScanner()
+  @ObservedObject var codeReader = CodeReader()
   
   var body: some View {
     
     NavigationView {
       List {
-        ForEach(qrScanner.decodeData) { decode in
+        ForEach(codeReader.decodeData) { decode in
           Button(action: {
           }) {
               Text(decode.decodeText)
@@ -23,18 +23,18 @@ struct ContentView: View {
         }
       }
       .navigationBarItems(trailing: Button(action: {
-        qrScanner.isShowSheet = true
-        qrScanner.startSession()
+        codeReader.isShowSheet = true
+        codeReader.startSession()
       }) {
         Text("Camera")
       })
     }
-    .sheet(isPresented: $qrScanner.isShowSheet) {
-      QRCodeReaderView(caLayer: qrScanner.previewLayer)
+    .sheet(isPresented: $codeReader.isShowSheet) {
+      CodeReaderView(caLayer: codeReader.previewLayer)
     }
   }
   func prepare() {
-    qrScanner.isShowSheet = false
+    codeReader.isShowSheet = false
   }
 }
 
