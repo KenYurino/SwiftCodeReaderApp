@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B53E2601286A9359007A6F50 /* DecodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E2600286A9359007A6F50 /* DecodeData.swift */; };
 		B5C451C02869AE6000ADD2CA /* CodeReaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C451BF2869AE6000ADD2CA /* CodeReaderApp.swift */; };
 		B5C451C22869AE6000ADD2CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C451C12869AE6000ADD2CA /* ContentView.swift */; };
 		B5C451C42869AE6100ADD2CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5C451C32869AE6100ADD2CA /* Assets.xcassets */; };
 		B5C451C72869AE6100ADD2CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5C451C62869AE6100ADD2CA /* Preview Assets.xcassets */; };
+		B5C451CE2869B0C100ADD2CA /* QRScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C451CD2869B0C100ADD2CA /* QRScanner.swift */; };
+		B5C451D02869B23C00ADD2CA /* QRCodeReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C451CF2869B23C00ADD2CA /* QRCodeReaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B53E2600286A9359007A6F50 /* DecodeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodeData.swift; sourceTree = "<group>"; };
 		B5C451BC2869AE6000ADD2CA /* CodeReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C451BF2869AE6000ADD2CA /* CodeReaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeReaderApp.swift; sourceTree = "<group>"; };
 		B5C451C12869AE6000ADD2CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B5C451C32869AE6100ADD2CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5C451C62869AE6100ADD2CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B5C451CD2869B0C100ADD2CA /* QRScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScanner.swift; sourceTree = "<group>"; };
+		B5C451CF2869B23C00ADD2CA /* QRCodeReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,9 @@
 			children = (
 				B5C451BF2869AE6000ADD2CA /* CodeReaderApp.swift */,
 				B5C451C12869AE6000ADD2CA /* ContentView.swift */,
+				B5C451CF2869B23C00ADD2CA /* QRCodeReaderView.swift */,
+				B5C451CD2869B0C100ADD2CA /* QRScanner.swift */,
+				B53E2600286A9359007A6F50 /* DecodeData.swift */,
 				B5C451C32869AE6100ADD2CA /* Assets.xcassets */,
 				B5C451C52869AE6100ADD2CA /* Preview Content */,
 			);
@@ -137,6 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5C451CE2869B0C100ADD2CA /* QRScanner.swift in Sources */,
+				B53E2601286A9359007A6F50 /* DecodeData.swift in Sources */,
+				B5C451D02869B23C00ADD2CA /* QRCodeReaderView.swift in Sources */,
 				B5C451C22869AE6000ADD2CA /* ContentView.swift in Sources */,
 				B5C451C02869AE6000ADD2CA /* CodeReaderApp.swift in Sources */,
 			);
@@ -270,6 +282,7 @@
 				DEVELOPMENT_TEAM = G2M3FA5B3L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Use Camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +312,7 @@
 				DEVELOPMENT_TEAM = G2M3FA5B3L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Use Camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
